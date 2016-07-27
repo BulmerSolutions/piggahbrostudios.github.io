@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>API | Try Page</title>
+		<link rel="stylesheet" href="tryit.css"/>
+	</head>
+	<body>
+		<display id="display"></display>
+		<config>
+			<div id="snippets">
+				<p style="color:#fff; margin: 0 auto 5px auto;"><b>Snippets:</b></p>
+				<textarea id="snip_1" rows="7">
+var Game = PB.create({
+ type: "canvas",
+ width: 500,
+ height: 500,
+ BGcolor: "#eee",
+ id: "gameCanvas",
+ ctx: "game",
+ target: "display"
+});</textarea><br>
+				<textarea id="snip_2" rows="7">
+var Box = PB.canvas.draw('game',{
+ type: "rect",
+ x: 200,
+ y: 200,
+ width: 150,
+ height: 75,
+ BGcolor: "#4d2600"
+});</textarea><br>
+				<textarea id="snip_3" rows="7">
+PB.load("MyDiv", "display");</textarea><br>
+				<input type="button" value="Snippet 1" id="snip_1_BTN" onclick="onClick(1)"/>
+				<input type="button" value="Snippet 2" id="snip_2_BTN" onclick="onClick(2)"/><br>
+				<input type="button" value="Snippet 3" id="snip_3_BTN" onclick="onClick(3)"/>
+				<input type="button" value="Reset Snippets" id="snip_RESET_BTN" onclick="onClick('RESET')"/>
+			</div>
+		</config>
+		<script src="piggahbro.js"></script>
+		<script src="piggahbro.server.js"></script>
+<!--		<script src="piggahbro.sprite2.js"></script> -->
+		<script src="tryit.js"></script>
+		<script src="piggahbro.script.js"></script>
+	</body>
+</html>

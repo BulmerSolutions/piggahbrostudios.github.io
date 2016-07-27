@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	overflow: hidden;
+}
+
+body {
+	background-color: #000;
+}
+
+display {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+	background-color: #fff;
+	height: calc(100% - 40px);
+	width: calc(100% - 250px);
+	border-radius: 5px;
+}
+
+config {
+	position: fixed;
+	background-color: #0047b3;
+	width: 200px;
+	height: 100vh;
+  top: 0;
+  left: 0;
+	padding: 5px;
+	overflow: hidden;
+}
+
+#snippets, #console {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #0047b3;
+	width: 200px;
+	height: 100vh;
+	padding: 5px;
+	overflow: hidden;
+}
+
+#snip_1, #snip_2, #snip_3 {
+	background-color: #fff;
+	padding: 2px;
+	border-radius: 5px;
+	width: calc(100% - 4px);
+	overflow: visible;
+}
+
+#snip_1_BTN, #snip_2_BTN, #snip_3_BTN, #snip_RESET_BTN {
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid;
+	margin-bottom: 2.5px;
+	width: 98px;
+}
+
+#snip_RESET_BTN {
+	border: 1px solid #ff0000;
+}
+
+#snipBTN {
+	position: fixed;
+	bottom: 5px;
+	left: 4.5px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid;
+	width: 98px;
+}
+
+display:fullscreen, display:-webkit-full-screen, display:moz-full-screen, display:-ms-fullscreen {
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
