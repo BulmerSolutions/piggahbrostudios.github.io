@@ -11,10 +11,22 @@
 /*                                                                  */
 //////////////////////////////////////////////////////////////////////
 
+var getBaseURL = function(url){
+  this.hits = '';
+  for( i=0; i<url.length; i++ ){
+    if (this.hits.substr(-1, -4) == '.com'){
+      return this.hits;
+    } else {
+      this.hits += url[i];
+    }
+  }
+}
+
 PB.rss = function (){
   this.feed = document.getElementsByTagName('rss');
   
   for(i=0; i < this.feed.length; i++){
+    this.urlOrigin = 
     PB.server.getFile('GET', {
       url: this.feed[i].getAttribute('url'),
       headers: ['Access-Control-Allow-Origin'],
