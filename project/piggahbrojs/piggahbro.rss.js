@@ -20,7 +20,6 @@ var getBaseURL = function(url){
       this.hits += url[i];
     }
   }
-  return this.hits;
 }
 
 PB.rss = function (){
@@ -30,7 +29,7 @@ PB.rss = function (){
     this.urlOrigin = 
     PB.server.getFile('GET', {
       url: this.feed[i].getAttribute('url'),
-      headers: ['Access-Control-Allow-Origin'],
+      headers: ['Access-Control-Allow-Headers', '*', 'Access-Control-Allow-Origin', getBaseOrigin(url)],
       onready: function(xhttp){
         if (xhttp.status === 200) {
           alert(xhttp.responseText);
