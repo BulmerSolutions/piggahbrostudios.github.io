@@ -15,6 +15,18 @@ PB.rss = function (){
   this.feed = document.getElementsByTagName('rss');
   
   for(i=0; i < this.feed.length; i++){
-    this.feed[i].innerText = "This feed wants to grab " + this.feed[i].getAttribute('url');
+    PB.server.viewFile('GET', {
+      url: this.feed[i].getAttribute('url'),
+      headers: ['Content-Type', 'text/js'],
+      onready: function(xhttp){
+        if (xhttp.status === 200) {
+          alert(xhttp.responseText);
+        } else if(xhttp.status === 404) {
+          alert('There was a 404 error');
+        } else {
+          alert('There was a problem with the request.\n\nCheck the console to know why.');
+        };
+      }
+    });
   }
 };
