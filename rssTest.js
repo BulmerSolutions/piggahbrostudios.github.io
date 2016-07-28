@@ -41,7 +41,7 @@ function xmlToJson(xml) {
 
 // Get your feed, convert to object, log object
 var xml;
-
+/*
 var x = new XMLHttpRequest();
 x.open("GET", "https://steamcommunity.com/groups/PiggahBroStudios/rss/", true);
 x.onreadystatechange = function() {
@@ -51,3 +51,5 @@ x.onreadystatechange = function() {
   }
 };
 x.send(null);
+
+*/
