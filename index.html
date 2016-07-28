@@ -92,13 +92,13 @@
         </table>
         <script type='text/javascript'>
           var sendEmail = function(){
-            this.mailTo = document.getElementById('contactEmail').value;
+            this.email = document.getElementById('contactEmail').value;
             this.name = document.getElementById('contactName').value;
             this.subject = document.getElementById('contactSubject').value;
             this.msg = document.getElementById('contactComment').value;
             
-            this.BODY = 'Name: ' + this.name + '%0A%0A%0AMessage:' + this.msg;
-            this.EMAIL = 'mailto:' + this.mailTo + '?' + 'subject=' + this.subject + '&body=' + this.BODY;
+            this.BODY = 'Name: ' + this.name + '%0AEmail: ' + this.email + '%0A%0AMessage:' + this.msg;
+            this.EMAIL = 'mailto:piggahbro@gmail.com?' + 'subject=' + this.subject + '&body=' + this.BODY;
             
             
             try {
