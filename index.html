@@ -57,7 +57,39 @@
         </div>
       </page>
       <page id='Contact'>
-        Contact me at piggahbro@gmail.com!
+        Contact me at piggahbro@gmail.com OR fill out the form below!
+        <table id='form'>
+          <tr>
+            <td>
+              <input id="contactName" class='form' placeholder="Name">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input id="contactEmail" type="email" class='form' placeholder="E-mail">
+            </td>
+          </tr>
+          <tr>
+            <td>Subject:
+              <select id="contactSubject" class='form' style='width:calc(100% - 56.5px);'>
+                <option>Contact Me</option>
+                <option>App Bug/Idea</option>
+                <option>Game Bug/Idea</option>
+                <option>Website Bug/Idea</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea id="contectComment" placeholder="Message" class='form' style='width:calc(100% - 4px);' rows='10'></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td style='background-color: #0047b3; color: #FFF; font-weight: bold;'>
+              <input id="contactSubmit" type="button" class='form' value="Send!" style='background-color: #0047b3; color: #FFF; font-weight: bold;'>
+            </td>
+          </tr>
+        </table>
       </page>
       <page id='Search'>
         <script>
