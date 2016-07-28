@@ -61,6 +61,9 @@ PB.server = {
       if(opts.ontimeout){
         xhttp.ontimeout = opts.ontimeout(xhttp);
       };
+      
+      xhttp.withCredentials = opts.withCredentials || false;
+      
       // Open URL
       xhttp.open(type, opts.url, true);
       
