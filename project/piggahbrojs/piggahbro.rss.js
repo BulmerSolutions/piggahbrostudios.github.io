@@ -14,7 +14,7 @@
 var getBaseURL = function(url){
   this.hits = '';
   for( i=0; i<url.length; i++ ){
-    if (this.hits.substr(-1, -3) == '.com'){
+    if (this.hits.substr((this.hits.length - 4),4) == '.com'){
       return this.hits;
     } else {
       this.hits += url[i];
