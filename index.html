@@ -90,6 +90,20 @@
             </td>
           </tr>
         </table>
+        <script type='text/javascript'>
+          var sendEmail = function(){
+            this.mailTo = document.getElementById('contactEmail').value;
+            this.name = document.getElementById('contactName').value;
+            this.subject = document.getElementById('contactSubject').value;
+            this.msg = document.getElementById('contactComment').value;
+            
+            this.BODY = 'Name: ' + this.name + '<br/><br/>Message:' + this.msg;
+            this.EMAIL = 'mailto:' + this.mailTo + '?' + 'subject=' + this.subject + '&body=' + this.BODY;
+            
+            window.send(this.EMAIL);
+          }
+          document.getElementById('contactSubmit').addEventListener('click', sendEmail, true);
+        </script>
       </page>
       <page id='Search'>
         <script>
