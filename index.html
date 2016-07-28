@@ -100,7 +100,7 @@
             this.BODY = 'Name: ' + this.name + '<br/><br/>Message:' + this.msg;
             this.EMAIL = 'mailto:' + this.mailTo + '?' + 'subject=' + this.subject + '&body=' + this.BODY;
             
-            window.send(this.EMAIL);
+            window.open(this.EMAIL);
           }
           document.getElementById('contactSubmit').addEventListener('click', sendEmail, true);
         </script>
