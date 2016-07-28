@@ -33,12 +33,6 @@ PB.server = {
           };
         }
       };
-      // Set headers
-      if(opts.headers){
-        for(i=0; i<(opts.headers.length/2); i+2){
-          xhttp.setRequestHeader(opts.headers[i], opts.headers[i+1]);
-        }
-      };
       // Set functions
       if(opts.onload){
         xhttp.onload = opts.onload(xhttp);
@@ -66,6 +60,13 @@ PB.server = {
       
       // Open URL
       xhttp.open(type, opts.url, true);
+      
+      // Set headers
+      if(opts.headers){
+        for(i=0; i<(opts.headers.length/2); i+2){
+          xhttp.setRequestHeader(opts.headers[i], opts.headers[i+1]);
+        }
+      };
       
       // Send request
       xhttp.send(opts.request || null);
