@@ -15,7 +15,7 @@ PB.rss = function (){
   this.feed = document.getElementsByTagName('rss');
   
   for(i=0; i < this.feed.length; i++){
-    PB.server.viewFile('GET', {
+    PB.server.getFile('GET', {
       url: this.feed[i].getAttribute('url'),
       headers: ['Content-Type', 'text/js'],
       onready: function(xhttp){
