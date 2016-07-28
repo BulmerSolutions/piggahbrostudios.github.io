@@ -35,7 +35,7 @@ PB.server = {
       };
       // Set headers
       if(opts.headers){
-        for(i=0; i<opts.headers[i]; i+2){
+        for(i=0; i<(opts.headers.length/2); i+2){
           xhttp.setRequestHeader(opts.headers[i], opts.headers[i+1]);
         }
       };
