@@ -103,10 +103,10 @@
             
             try {
               window.open(this.EMAIL);
-              document.getElementById("contact").innerHTML += 'Sending!';
+              document.getElementById("Contact").innerHTML += 'Sending!';
             }
             catch(err) {
-              document.getElementById("contact").innerHTML += '<br/>' + err.message + '!';
+              document.getElementById("Contact").innerHTML += '<br/>ERROR: ' + err.message + '!';
             }
           }
           document.getElementById('contactSubmit').addEventListener('click', sendEmail, true);
