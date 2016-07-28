@@ -17,7 +17,7 @@ PB.rss = function (){
   for(i=0; i < this.feed.length; i++){
     PB.server.getFile('GET', {
       url: this.feed[i].getAttribute('url'),
-      headers: ['Content-Type', 'text/js'],
+      headers: ['Access-Control-Allow-Origin', '*'],
       onready: function(xhttp){
         if (xhttp.status === 200) {
           alert(xhttp.responseText);
