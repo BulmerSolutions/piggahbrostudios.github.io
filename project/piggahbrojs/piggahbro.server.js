@@ -76,7 +76,7 @@ PB.server = {
 /*
 EXAMPLE:
 
-PB.server.viewFile('GET', {
+PB.server.getFile('GET', {
   url: 'http://piggahbrostudios.github.io/project/piggahbrojs/piggahbro.js',
   headers: ['Content-Type', 'text/js'],
   onready: function(xhttp){
