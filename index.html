@@ -61,17 +61,17 @@
         <table id='form'>
           <tr>
             <td>
-              <input id="contactName" class='form' placeholder="Name">
+              <input id="contactName" class='form' placeholder="Name" required>
             </td>
           </tr>
           <tr>
             <td>
-              <input id="contactEmail" type="email" class='form' placeholder="E-mail">
+              <input id="contactEmail" type="email" class='form' placeholder="E-mail" required>
             </td>
           </tr>
           <tr>
             <td>Subject:
-              <select id="contactSubject" class='form' style='width:calc(100% - 63px);'>
+              <select id="contactSubject" class='form' style='width:calc(100% - 63px);' required>
                 <option>Contact Me</option>
                 <option>App Bug/Idea</option>
                 <option>Game Bug/Idea</option>
@@ -81,7 +81,7 @@
           </tr>
           <tr>
             <td>
-              <textarea id="contactComment" placeholder="Message" class='form' style='width:100%;height: 75px;'></textarea>
+              <textarea id="contactComment" placeholder="Message" class='form' style='width:100%;height: 75px;' required></textarea>
             </td>
           </tr>
           <tr>
