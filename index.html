@@ -97,7 +97,7 @@
             this.subject = document.getElementById('contactSubject').value;
             this.msg = document.getElementById('contactComment').value;
             
-            this.BODY = 'Name: ' + this.name + '<br/><br/>Message:' + this.msg;
+            this.BODY = 'Name: ' + this.name + '%0A%0A%0AMessage:' + this.msg;
             this.EMAIL = 'mailto:' + this.mailTo + '?' + 'subject=' + this.subject + '&body=' + this.BODY;
             
             window.open(this.EMAIL);
