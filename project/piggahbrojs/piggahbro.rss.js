@@ -14,12 +14,13 @@
 var getBaseURL = function(url){
   this.hits = '';
   for( i=0; i<url.length; i++ ){
-    if (this.hits.substr(-1, -4) == '.com'){
+    if (this.hits.substr(-1, -3) == '.com'){
       return this.hits;
     } else {
       this.hits += url[i];
     }
   }
+  return this.hits;
 }
 
 PB.rss = function (){
