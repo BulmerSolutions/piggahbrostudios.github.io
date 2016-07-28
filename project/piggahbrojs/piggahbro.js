@@ -33,33 +33,33 @@ var PB = {
           elem.requestPointerLock();
         }
       });
-    },
-    find: function(type, search) {
-      if (typeof type === 'string' && typeof search === 'string') {
-        type = type.toLowerCase();
-        switch (type) {
-          case 'id':
-            this.result = document.getElementById(search);
-            break;
-          case 'tagname':
-            this.result = document.getElementsByTagName(search);
-            break;
-          case 'tagnamens':
-            this.result = document.getElementsByTagNameNS(search);
-            break;
-          case 'name':
-            this.result = document.getElementsByName(search);
-            break;
-          case 'classname':
-            this.result = document.getElementsByClassName(search);
-            break;
-          default:
-            console.error(type + ' is not a type')
-        };
-        return this.result;
-      } else {
-        console.error('Please make sure that both parameters are strings!');
-      }
+    }
+  },
+  find: function(type, search) {
+    if (typeof type === 'string' && typeof search === 'string') {
+      type = type.toLowerCase();
+      switch (type) {
+        case 'id':
+          this.result = document.getElementById(search);
+          break;
+        case 'tagname':
+          this.result = document.getElementsByTagName(search);
+          break;
+        case 'tagnamens':
+          this.result = document.getElementsByTagNameNS(search);
+          break;
+        case 'name':
+          this.result = document.getElementsByName(search);
+          break;
+        case 'classname':
+          this.result = document.getElementsByClassName(search);
+          break;
+        default:
+          console.error(type + ' is not a type')
+      };
+      return this.result;
+    } else {
+      console.error('Please make sure that both parameters are strings!');
     }
   },
   getBaseURL: function(url) {
