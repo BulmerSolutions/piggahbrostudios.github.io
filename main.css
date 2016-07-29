@@ -5,6 +5,10 @@
   font-family: "Arial", Sans-serifs;
 }
 
+li {
+  padding-left: 25px;
+}
+
 body {
   background-color: #000;
 }
