@@ -60,20 +60,21 @@
       </page>
       <page id='Contact'>
         Contact me at piggahbro@gmail.com OR fill out the form below!
+        <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
         <table id='form'>
           <tr>
             <td>
-              <input id="contactName" class='form' placeholder="Name" required>
+              <input name="name" class='form' placeholder="Name" required>
             </td>
           </tr>
           <tr>
             <td>
-              <input id="contactEmail" type="email" class='form' placeholder="E-mail" required>
+              <input name="email" type="email" class='form' placeholder="E-mail" required>
             </td>
           </tr>
           <tr>
             <td>Subject:
-              <select id="contactSubject" class='form' style='width:calc(100% - 63px);' required>
+              <select name="subject" class='form' style='width:calc(100% - 63px);' required>
                 <option>Contact Us</option>
                 <option>App Bug/Idea</option>
                 <option>Game Bug/Idea</option>
@@ -83,7 +84,7 @@
           </tr>
           <tr>
             <td>
-              <textarea id="contactComment" placeholder="Message" class='form' style='width:100%;height: 75px;' required></textarea>
+              <textarea name="comment" placeholder="Message" class='form' style='width:100%;height: 75px;' required></textarea>
             </td>
           </tr>
           <tr>
@@ -92,27 +93,7 @@
             </td>
           </tr>
         </table>
-        <script type='text/javascript'>
-          var sendEmail = function(){
-            this.email = document.getElementById('contactEmail').value;
-            this.name = document.getElementById('contactName').value;
-            this.subject = document.getElementById('contactSubject').value;
-            this.msg = document.getElementById('contactComment').value;
-            
-            this.BODY = 'Name: ' + this.name + '%0AEmail: ' + this.email + '%0A%0AMessage:' + this.msg;
-            this.EMAIL = 'mailto:piggahbro@gmail.com?' + 'subject=' + this.subject + '&body=' + this.BODY;
-            
-            
-            try {
-              window.open(this.EMAIL);
-              document.getElementById("Contact").innerHTML += 'Sending!';
-            }
-            catch(err) {
-              document.getElementById("Contact").innerHTML += '<br/>ERROR: ' + err.message + '!';
-            }
-          }
-          document.getElementById('contactSubmit').addEventListener('click', sendEmail, true);
-        </script>
+        </form>
       </page>
       <page id='Search'>
         <script>
