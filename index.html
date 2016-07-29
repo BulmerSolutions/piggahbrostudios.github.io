@@ -55,7 +55,7 @@
       </page>
       <page id='News'>
         <div id='description'>
-            <rss url='https://steamcommunity.com/groups/PiggahBroStudios/rss/'><h3><a href='https://steamcommunity.com/groups/PiggahBroStudios/' style='color: #000; text-decoration: none;' target='_BLANK'>Steam Community:</a></h3><br/><br/></rss>
+            <rss url='https://steamcommunity.com/groups/PiggahBroStudios/rss/'><h3><a href='https://steamcommunity.com/groups/PiggahBroStudios/' style='color: #000; text-decoration: none;' target='_BLANK'>Steam Community:</a></h3><br/><hr/><br/></rss>
         </div>
       </page>
       <page id='Contact'>
@@ -150,13 +150,17 @@
               if(result.error) {
                   console.error(result.error);
               } else {
-                  var entries = result.feed.entries;
-                  for(var i = 0; i < entries.length; i++){
-                      feedInfo.entry = entries[i];
-                      console.dir(feedInfo.entry);
-                      if(entries[i].author) feedInfo.out.innerText += "<b>" + entries[i].author + "</b><br/>";
-                      if(entries[i].description) feedInfo.out.innerText += entries[i].description + "<br/><br/><hr/><br/>";
-                  }
+                var entries = result.feed.entries;
+                for(var i = 0; i < entries.length; i++){
+                    feedInfo.entry = entries[i];
+                    console.dir(feedInfo.entry);
+                    if(entries[i].author) {
+                      feedInfo.out.innerHTML += "<b>";
+                      feedInfo.out.innerText += entries[i].author
+                      feedInfo.out.innerHTML += "</b><br/>"
+                    }
+                    if(entries[i].description) feedInfo.out.innerHTML += entries[i].description + "<br/><br/><hr/><br/>";
+                }
               }
             });
           }
