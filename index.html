@@ -152,8 +152,8 @@
                   for(var i = 0; i < entries.length; i++){
                       var entry = entries[i];
                       console.dir(entry);
-                      if(entry.author) this.out.innerHTML += "<b>" + entry.author + "</b><br>";
-                      if(entry.description) this.out.innerHTML += entry.description + "<br>";
+                      if(entries[i].author) this.out.innerHTML += "<b>" + entries[i].author + "</b><br>";
+                      if(entries[i].description) this.out.innerHTML += entries[i].description + "<br>";
                   }
               }
             });
