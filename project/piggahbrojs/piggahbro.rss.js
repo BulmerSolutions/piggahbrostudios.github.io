@@ -21,7 +21,7 @@ PB.rss = function (){
       headers: ['Access-Control-Allow-Headers', '*', 'Access-Control-Allow-Origin', PB.getBaseURL(this.feed[i].getAttribute('url'))],
       onready: function(xhttp){
         if (xhttp.status === 200) {
-          alert(xhttp.responseText);
+          this.feed[i].innerText = xhttp.responseXML;
         } else if(xhttp.status === 404) {
           alert('There was a 404 error');
         } else {
