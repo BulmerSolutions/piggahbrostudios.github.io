@@ -4,6 +4,7 @@
     <title>Piggah Bro Studios</title>
     <link rel='stylesheet' type='text/css' href='main.css'/>
     <meta name="google-site-verification" content="HYXwozUBw5w7exVbalLbZtY0g07kTodtCNUFmehzFpU" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" type="image/png" href="image/favicon.png">
@@ -134,5 +135,30 @@
     <script src='project/piggahbrojs/piggahbro.rss.js'></script>
     <script src='project/piggahbrojs/piggahbro.server.js'></script>
     <script src='rssTest.js'></script>
+    <script src="https://cdn.rawgit.com/sekando/feednami-client/master/releases/1.0.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+          this.feed = document.getElementsByTagName('rss');
+          
+          for(i=0; i < this.feed.length; i++){
+            this.out = this.feed[i];
+            this.url = 'https://steamcommunity.com/groups/PiggahBroStudios/rss/';
+            feednami.load(this.url,function(result){
+              if(result.error) {
+                  console.error(result.error);
+              } else {
+                  var entries = result.feed.entries;
+                  for(var i = 0; i < entries.length; i++){
+                      var entry = entries[i];
+                      console.dir(entry);
+                      if(entry.author) this.out.innerHTML += "<b>" + entry.author + "</b><br>";
+                      if(entry.description) this.out.innerHTML += entry.description + "<br>";
+                  }
+              }
+            });
+          }
+        });
+    </script>
   </body>
 </html>
