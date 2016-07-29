@@ -9,6 +9,10 @@ ul {
   padding-left: 25px;
 }
 
+hr {
+  border: 1px solid #ccc;
+}
+
 body {
   background-color: #000;
 }
