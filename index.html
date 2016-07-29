@@ -143,7 +143,7 @@
           
           for(i=0; i < this.feed.length; i++){
             this.out = this.feed[i];
-            this.url = 'https://steamcommunity.com/groups/PiggahBroStudios/rss/';
+            this.url = this.feed[i].getAttribute('url');
             feednami.load(this.url,function(result){
               if(result.error) {
                   console.error(result.error);
