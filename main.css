@@ -89,7 +89,11 @@ p {
 
 rss {
   display: block;
-  width: 250px;
+  width: 30%;
+  height: 500px;
+  padding: 3px;
+  border: 1px solid #3b94d9;
+  border-radius: 5px;
 }
 
 #form td {
