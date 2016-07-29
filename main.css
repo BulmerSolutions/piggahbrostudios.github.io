@@ -94,6 +94,7 @@ rss {
   padding: 3px;
   border: 1px solid #3b94d9;
   border-radius: 5px;
+  overflow-y: scroll;
 }
 
 #form td {
