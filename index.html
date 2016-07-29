@@ -139,21 +139,22 @@
     <script type="text/javascript">
       $(document).ready(function() {
         
-          this.feed = document.getElementsByTagName('rss');
+          var feeds = document.getElementsByTagName('rss');
+          var feedInfo;
           
-          for(i=0; i < this.feed.length; i++){
-            this.out = this.feed[i];
-            this.url = this.feed[i].getAttribute('url');
-            feednami.load(this.url,function(result){
+          for(i=0; i < feeds.length; i++){
+            feedInfo.out = feeds[i];
+            feedInfo.url = feeds[i].getAttribute('url');
+            feednami.load(feedInfo.url,function(result){
               if(result.error) {
                   console.error(result.error);
               } else {
                   var entries = result.feed.entries;
                   for(var i = 0; i < entries.length; i++){
-                      var entry = entries[i];
-                      console.dir(entry);
-                      if(entries[i].author) this.out.innerHTML += "<b>" + entries[i].author + "</b><br>";
-                      if(entries[i].description) this.out.innerHTML += entries[i].description + "<br>";
+                      feedInfo.entry = entries[i];
+                      console.dir(feedInfo.entry);
+                      if(entries[i].author) feedInfo.out.innerHTML += "<b>" + entries[i].author + "</b><br>";
+                      if(entries[i].description) feedInfo.out.innerHTML += entries[i].description + "<br>";
                   }
               }
             });
