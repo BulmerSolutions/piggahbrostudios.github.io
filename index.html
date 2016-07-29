@@ -154,11 +154,7 @@
                 for(var i = 0; i < entries.length; i++){
                     feedInfo.entry = entries[i];
                     console.dir(feedInfo.entry);
-                    if(entries[i].author) {
-                      feedInfo.out.innerHTML += "<b>";
-                      feedInfo.out.innerHTML += '' + entries[i].author;
-                      feedInfo.out.innerHTML += "</b><br/>";
-                    }
+                    if(entries[i].author) feedInfo.out.innerHTML += "<b>" + entries[i].author + "</b><br/>";
                     if(entries[i].description) feedInfo.out.innerHTML += entries[i].description + "<br/><br/><hr/><br/>";
                 }
               }
