@@ -130,7 +130,10 @@ footer {
   background-color: #fff;
   height: 75px;
   position: static;
+  bottom: 0;
 }
+
+/*
 
 @media screen and (min-height: 99.9vh) {
   footer {
@@ -138,3 +141,5 @@ footer {
     bottom: 0;
   }
 }
+
+*/
