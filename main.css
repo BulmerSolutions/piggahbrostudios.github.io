@@ -132,7 +132,7 @@ footer {
   position: static;
 }
 
-@media screen and (max-height: 99.9vh) {
+@media screen and (min-height: 99.9vh) {
   footer {
     position: fixed;
     bottom: 0;
