@@ -131,7 +131,7 @@ footer {
   height: 50px;
 }
 
-@media screen and (min-height: 100vh) {
+@media screen and (max-height: 100vh) {
   footer {
     position: fixed;
     bottom: 0;
