@@ -3,38 +3,38 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url> 
-    <loc>https://piggahbrostudios.github.io.com</loc> 
+    <loc>https://piggahbrostudios.github.io/</loc> 
     <image:image>
-       <image:loc>https://piggahbrostudios.github.io.com/image/logo.png</image:loc>
+       <image:loc>https://piggahbrostudios.github.io/image/logo.png</image:loc>
        <image:caption>Piggah Bro Studios Logo</image:caption>
     </image:image>
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/#Home</loc> 
+    <loc>https://piggahbrostudios.github.io/#Home</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/#News</loc> 
+    <loc>https://piggahbrostudios.github.io/#News</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/#Contact</loc> 
+    <loc>https://piggahbrostudios.github.io/#Contact</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/#Products</loc> 
+    <loc>https://piggahbrostudios.github.io/#Products</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/game/#Home</loc> 
+    <loc>https://piggahbrostudios.github.io/game/#Home</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/game/#Feline-Fighters</loc> 
+    <loc>https://piggahbrostudios.github.io/game/#Feline-Fighters</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/project/#Home</loc> 
+    <loc>https://piggahbrostudios.github.io/project/#Home</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/project/#PiggahBroJS</loc>
+    <loc>https://piggahbrostudios.github.io/project/#PiggahBroJS</loc>
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io.com/project/#Coloring-Pad</loc>
+    <loc>https://piggahbrostudios.github.io/project/#Coloring-Pad</loc>
   </url>
   <url> 
     <loc>https://piggahbrostudios.github.io.com/project/#Scan-Code</loc>
