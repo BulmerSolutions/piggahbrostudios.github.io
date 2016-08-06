@@ -55,8 +55,16 @@
       </page>
       <page id='News'>
         <div id='description'>
-            <rss url='https://steamcommunity.com/groups/PiggahBroStudios/rss/'><h3><a href='https://steamcommunity.com/groups/PiggahBroStudios/' style='color: #000; text-decoration: none;' target='_BLANK'>Steam Community:</a></h3><br/><hr/><br/></rss>
-            <rss url='https://github.com/PiggahBroStudios.atom'><h3><a href='https://github.com/PiggahBroStudios' style='color: #000; text-decoration: none;' target='_BLANK'>Git Hub Posts</a></h3><br/><hr/><br/></rss>
+            <rss url='https://steamcommunity.com/groups/PiggahBroStudios/rss/'>
+              <h3>
+                <a href='https://steamcommunity.com/groups/PiggahBroStudios/' style='color: #000; text-decoration: none;' target='_BLANK'>Steam Community:</a>
+              </h3><br/><hr/><br/>
+            </rss>
+            <rss url='https://github.com/PiggahBroStudios.atom'>
+              <h3>
+                <a href='https://github.com/PiggahBroStudios' style='color: #000; text-decoration: none;' target='_BLANK'>Git Hub Commits</a>
+              </h3><br/><hr/><br/>
+            </rss>
         </div>
       </page>
       <page id='Contact'>
@@ -135,8 +143,8 @@
               } else {
                 var entries = result.feed.entries;
                 for(var i = 0; i < entries.length; i++){
-                    if(entries[i].author) feedInfo.out.innerHTML += "<b>" + entries[i].author + "</b><br/>";
-                    if(entries[i].description) feedInfo.out.innerHTML += entries[i].description + "<br/><br/><hr/><br/>";
+                    if(entries[i].author) feeds[i].innerHTML += "<b>" + entries[i].author + "</b><br/>";
+                    if(entries[i].description) feeds[i].innerHTML += entries[i].description + "<br/><br/><hr/><br/>";
                 }
               }
             });
