@@ -304,22 +304,17 @@
     <script>
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId());
+        //console.log('ID: ' + profile.getId());
         document.getElementById('profileName').innerText = 'Hello, ' + profile.getName() + '!';
-        PBS.cookie.check('username', {
-          name: 'username',
-          value: profile.getName(),
-          days: 30
-        });
         document.getElementById('profilePic').src = profile.getImageUrl();
         document.getElementById('g-signin2').style.display = 'none';
         document.getElementById('googleInfo').style.display = 'inline-block';
-        console.log('Email: ' + profile.getEmail());
+        //console.log('Email: ' + profile.getEmail());
       }
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
-          console.log('User signed out.');
+          
         });
       }
     </script>
