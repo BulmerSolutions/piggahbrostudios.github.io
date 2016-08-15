@@ -54,7 +54,7 @@
         </p><br/><p>
           Right now I've started up a new javascript programming library, but I don't have a name for it yet. It is mainly going to 
           help you with web development to allow you to expand your website like you'd never expect. I only have one function in this
-          library called <a href='https://github.com/PiggahBroStudios/PBS-WebKit'>pageFinder.js</a>, what it does is
+          library called <a href='https://github.com/PiggahBroStudios/PBS-WebKit' target="_BLANK">pageFinder.js</a>, what it does is
           make multiple pages in one HTML file, you can find out more in the link if you're interested in it.
         </p>
       </main>
@@ -362,26 +362,22 @@
     <script>
       function onSignIn(googleUser) {
         var profile = googleUser.getBasicProfile();
-        console.log('ID: ' + profile.getId());
+        //console.log('ID: ' + profile.getId());
         document.getElementById('profileName').innerText = 'Hello, ' + profile.getName() + '!';
-        PBS.cookie.check('username', {
-          name: 'username',
-          value: profile.getName(),
-          days: 30
-        });
         document.getElementById('profilePic').src = profile.getImageUrl();
         document.getElementById('g-signin2').style.display = 'none';
         document.getElementById('googleInfo').style.display = 'inline-block';
-        console.log('Email: ' + profile.getEmail());
+        //console.log('Email: ' + profile.getEmail());
       }
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
           console.log('User signed out.');
+          document.getElementById('g-signin2').style.display = 'block';
+          document.getElementById('googleInfo').style.display = 'none';
         });
       }
     </script>
     <script src='PBSWebKit.js'></script>
-    <script src='PBSWebKit.google.js'></script>
   </body>
 </html>
