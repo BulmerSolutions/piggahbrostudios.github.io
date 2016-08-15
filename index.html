@@ -1,0 +1,303 @@
+<html>
+  <head>
+    <title>Piggah Bro Studios</title>
+    <link rel='stylesheet' href='main.css'/>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="998686719090-ic3fu760a1tld25lp389kd7h4geqe5tf.apps.googleusercontent.com">
+  </head>
+  <body>
+    <div class='positioned'>
+      <div class="g-signin2" id='g-signin2' data-onsuccess="onSignIn"></div>
+      <div class='googleInfo' id='googleInfo'>
+        <img id='profilePic'></img>
+        <p id='profileName'></p>
+        <a href="/#/Home" onclick="signOut();">Sign out</a>
+      </div>
+    </div>
+    <section id='/Home' title="Home | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Home</h6></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#/Home">Home</a></li>
+          <li><a href="#/News">News</a></li>
+          <li class="dropdown">
+            <a href="#/Gaming" class="dropbtn">Gaming Station</a>
+            <div class="dropdown-content">
+              <a href="#/Gaming/Games">Games</a>
+              <a href="#/Gaming/Modpacks">Minecraft Modpacks</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#/Projects" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+              <a href="#/Projects/PiggahBroJS">PiggahBroJS</a>
+              <a href="#/Projects/Coloring-Pad">Coloring Pad</a>
+              <a href="#/Projects/Scan-Code">Scan Code</a>
+            </div>
+          </li>
+          <li style='border-right: 2px solid #0AF;'><a href="#/Search">Search</a></li>
+        </ul>
+      </nav>
+      <aside class='twitter'>
+        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/PiggahBro" data-widget-id="717426157537386496">Tweets by @PiggahBro</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </aside>
+      <main>
+        <h2>Welcome to Piggah Bro Studios' Official Website!</h2><br/>
+        <p>
+          I, Dylan Bulmer, am the founder of Piggah Bro Studios! I have been slowing starting to build up this organization from the ground up!
+          I am now working with three others to create games, for this I have an artist, a musician, an story-line editor, and I am the programmer.
+          All the projects are mainly done by myself with some help be the community, for exapmle, PiggahBroJS is my javascript library I've built
+          100% on my own with somehelp here and there when I constantly get the same error over and over again.
+        </p><br/><p>
+          Right now I've started up a new javascript programming library, but I don't have a name for it yet. It is mainly going to 
+          help you with web development to allow you to expand your website like you'd never expect. I only have one function in this
+          library called <a href='https://github.com/PiggahBroStudios/PBS-WebKit'>pageFinder.js</a>, what it does is
+          make multiple pages in one HTML file, you can find out more in the link if you're interested in it.
+        </p>
+      </main>
+    </section>
+    <section id='/News' title="News | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>News</h6></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#/Home">Home</a></li>
+          <li><a href="#/News">News</a></li>
+          <li class="dropdown">
+            <a href="#/Gaming" class="dropbtn">Gaming Station</a>
+            <div class="dropdown-content">
+              <a href="#/Gaming/Games">Games</a>
+              <a href="#/Gaming/Modpacks">Minecraft Modpacks</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#/Projects" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+              <a href="#/Projects/PiggahBroJS">PiggahBroJS</a>
+              <a href="#/Projects/Coloring-Pad">Coloring Pad</a>
+              <a href="#/Projects/Scan-Code">Scan Code</a>
+            </div>
+          </li>
+          <li style='border-right: 2px solid #0AF;'><a href="#/Search">Search</a></li>
+        </ul>
+      </nav>
+      <main class='full-page'>
+        News will go here!
+        <rss url = ''></rss>
+      </main>
+    </section>
+    <section id='/Search' title="Search | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Search</h6></a>
+      </header>
+      <nav>
+        <ul>
+          <li><a class="active" href="#/Home">Home</a></li>
+          <li><a href="#/News">News</a></li>
+          <li class="dropdown">
+            <a href="#/Gaming" class="dropbtn">Gaming Station</a>
+            <div class="dropdown-content">
+              <a href="#/Gaming/Games">Games</a>
+              <a href="#/Gaming/Modpacks">Minecraft Modpacks</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#/Projects" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+              <a href="#/Projects/PiggahBroJS">PiggahBroJS</a>
+              <a href="#/Projects/Coloring-Pad">Coloring Pad</a>
+              <a href="#/Projects/Scan-Code">Scan Code</a>
+            </div>
+          </li>
+          <li style='border-right: 2px solid #0AF;'><a href="#/Search">Search</a></li>
+        </ul>
+      </nav>
+      <script>
+        (function() {
+          var cx = '018139380818629127426:r3nm4rtovnk';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <main class='full-page'>
+        <gcse:searchbox></gcse:searchbox>
+      </main>
+      <main class='full-page'>
+        <gcse:searchresults></gcse:searchresults>
+      </main>
+    </section>
+    <section id='/ERROR/404' title="404 Error! | Piggah Bro Studios">
+      <main>
+        <h2>Uh Oh!</h2>
+        <h3>There is no such thing as that page!</h3>
+      </main>
+    </section>
+    <section id='/Gaming' title="Gaming Station | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Gaming Station</h6></a>
+      </header>
+      <main class='full-page'>
+        <b>What do you need today?</b><br/>
+        <a href='#/Gaming/Modpacks'><tile>Minecraft Modpacks</tile></a>
+        <a href='#/Gaming/Games'><tile>Games</tile></a>
+      </main>
+    </section>
+    <section id='/Gaming/Modpacks' title="Modpacks | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Gaming Station | Minecraft Modpacks</h6></a>
+      </header>
+      <main class='full-page'>
+        <p>All my modpacks are organized by what Minecraft Version it supports!</p><br/>
+        <b>1.7.10</b><br/>
+        <a href='#/Gaming/Modpacks/PBT'><tile>Piggah Bro's Technology Pack</tile></a>
+      </main>
+    </section>
+    <section id='/Gaming/Games' title="Games | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Gaming Station | Games</h6></a>
+      </header>
+      <main class='full-page'>
+        <p>I will list all of my games on this page!</p><br/>
+        <a href='#/Gaming/Games/Feline-Fighters'><tile>Feline Fighters</tile></a>
+      </main>
+    </section>
+    <section id='/Gaming/Games/Feline-Fighters' title="Feline Fighters | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Games | Feline Fighters</h6></a>
+      </header>
+      <aside>
+        Feline Fighters
+      </aside>
+      <main>
+        <b>About:</b><br/><br/><p>
+          I have made this game with a different group of people than I do now. We were given a couple of months to create any game we want. I, Dylan, brought up the
+          idea of creating a game inspired by "Duck Game" developed by Landon Podbielski.</p><br/>
+        <b>Where to play:</b><br/><br/><p>
+          This game is on my <a href='https://playcanvas.com/project/375572/overview/feline-fighters-piggahbro' target="_BLANK">playcanvas page</a>! All you need to do is click
+          the link and click play!
+        </p>
+        <b>How to play:</b><br/><br/><p>
+          Controls:<br/><ul style='padding-left: 4em'>
+            <li>Player 1:</li>
+            <ul style='padding-left: 1em'>
+              <li>Left: A</li>
+              <li>Right: D</li>
+              <li>Jump: W</li>
+              <li>Throw/Shoot: E</li>  
+            </ul>
+            <li>Player 2:</li>
+            <ul style='padding-left: 1em'>
+              <li>Left: J</li>
+              <li>Right: L</li>
+              <li>Jump: I</li>
+              <li>Throw/Shoot: O</li>  
+            </ul>
+            <li>Player 3:</li>
+            <ul style='padding-left: 1em'>
+              <li>Left: Left Arrow</li>
+              <li>Right: Right Arrow</li>
+              <li>Jump: Up Arrow</li>
+              <li>Throw/Shoot: Numpad 0</li>  
+            </ul>
+          </ul>
+        </p>
+      </main>
+    </section>
+    <section id='/Gaming/Modpacks/PBT' title="Piggah Bro's Technology Pack | Piggah Bro Studios">
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Minecraft Modpacks | Piggah Bro's Technology Pack</h6></a>
+      </header>
+      <aside>
+        Piggah Bro's Technology Pack
+      </aside>
+      <main>
+        <b>About:</b><br/><br/><p>
+          Piggah Bro's Technology modpack has been put together for Minecraft version 1.7.10 and is avalible on the <a href='' target="_BLANK">Technic Platform</a> website!
+        </p><br/><b>Installation:</b><br/><br/><p>
+          To get this modpack, you'll need to download the Technic Launcher and login to your Minecraft account if you haven't done this already. From here, click
+          the "Download This Modpack" on the sidebar, now at the top-left corner of that page will be a button saying install, click it and follow the intructions
+          from there!
+        </p>
+      </main>
+    </section>
+    <section id='/Projects' title='Projects | Piggah Bro Studios'>
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Projects</h6></a>
+      </header>
+      <main class='full-page'>
+        <p>This is where my projects will be listed. Below you will find links to every project from my development APIs to my little programs!</p><br/>
+        <b>Development Libraries/APIs</b><br/>
+        <a href='#/Projects/PiggahBroJS'><tile>PiggahBroJS</tile></a>
+        <a href='#/Projects/PBS-WebKit'><tile>PBS Web Kit</tile></a><br/>
+        <b>Free Online Programs</b><br/>
+        <a href='#/Projects/Coloring-Pad'><tile>Coloring Pad</tile></a>
+        <a href='#/Projects/Scan-Code'><tile>Scan Code</tile></a>
+      </main>
+    </section>
+    <section id='/Projects/PiggahBroJS' title='PiggahBroJS | Piggah Bro Studios'>
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Projects | PiggahBroJS</h6></a>
+      </header>
+      <aside>
+        <a href = 'https://github.com/PiggahBroStudios/PiggahBroJS' target="_BLANK">PiggahBroJS</a>
+      </aside>
+      <main>
+        <b>About:</b><br/><br/><p>
+          This is my first JavaScript library. I had no planned direction on where this libary was going to go. I made many different functions including, file.create(), fullscreen(),
+          etc. I now have stopped working on this project so I can work on different ideas.</p><br/>
+        </p>
+      </main>
+    </section>
+    <section id='/Projects/PBS-WebKit' title='Web Dev Kit | Piggah Bro Studios'>
+      <header>
+        <a class = 'header' href='#/Home'>Piggah Bro Studios<br/><h6>Projects | Web Development Kit</h6></a>
+      </header>
+      <aside>
+        <a href = 'https://github.com/PiggahBroStudios/PBS-WebKit' target="_BLANK">Web Development Kit</a>
+      </aside>
+      <main>
+        <b>About:</b><br/><br/><p>
+          My Web Development Kit is being built to provide many different functionalities including an easy way to create as many pages as you want on one html page, create cookies,
+          and much more!
+        </p><br/><b>How To Use:</b><p>
+          To get the library, click the link on the left sidebar, 
+        </p>
+      </main>
+    </section>
+    <footer>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Piggah Bro Studios</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://piggahbrostudios.github.io" property="cc:attributionName" rel="cc:attributionURL" target="_BLANK">Dylan Bulmer</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</footer>
+    </footer>
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId());
+        document.getElementById('profileName').innerText = 'Hello, ' + profile.getName() + '!';
+        PBS.cookie.check('username', {
+          name: 'username',
+          value: profile.getName(),
+          days: 30
+        });
+        document.getElementById('profilePic').src = profile.getImageUrl();
+        document.getElementById('g-signin2').style.display = 'none';
+        document.getElementById('googleInfo').style.display = 'inline-block';
+        console.log('Email: ' + profile.getEmail());
+      }
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log('User signed out.');
+        });
+      }
+    </script>
+    <script src='PBSWebKit.js'></script>
+    <script src='PBSWebKit.google.js'></script>
+  </body>
+</html>
