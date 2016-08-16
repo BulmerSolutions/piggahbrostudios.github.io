@@ -7,36 +7,64 @@
     <image:image>
        <image:loc>https://piggahbrostudios.github.io/image/logo.png</image:loc>
        <image:caption>Piggah Bro Studios Logo</image:caption>
+    </image:image> 
+    <image:image>
+       <image:loc>https://piggahbrostudios.github.io/image/WebsiteTitleImage.jpeg</image:loc>
+       <image:caption>Piggah Bro Studios Title Image</image:caption>
     </image:image>
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/#Home</loc> 
+    <loc>https://piggahbrostudios.github.io/#/Home</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/#News</loc> 
+    <loc>https://piggahbrostudios.github.io/#/News</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/#Contact</loc> 
+    <loc>https://piggahbrostudios.github.io/#/Search</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/#Products</loc> 
+    <loc>https://piggahbrostudios.github.io/#/Projects</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/game/#Home</loc> 
+    <loc>https://piggahbrostudios.github.io/#/Gaming</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/game/#Feline-Fighters</loc> 
+    <loc>https://piggahbrostudios.github.io/#/Gaming/Games</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/project/#Home</loc> 
+    <loc>https://piggahbrostudios.github.io/#/Gaming/Modpacks</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/project/#PiggahBroJS</loc>
+    <loc>https://piggahbrostudios.github.io/#/Gaming/Games/Feline-Fighters</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/project/#Coloring-Pad</loc>
+    <loc>https://piggahbrostudios.github.io/#/Projects/Home</loc> 
   </url>
   <url> 
-    <loc>https://piggahbrostudios.github.io/project/#Scan-Code</loc>
+    <loc>https://piggahbrostudios.github.io/#/Projects/PiggahBroJS</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/#/Projects/Coloring-Pad</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/#/Projects/Scan-Code</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/#/Services</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/#/Services/Web-Development</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/#/Services/Technical-Support</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/project/piggahbrojs/piggahbro.js</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/project/piggahbrojs/piggahbro.server.js</loc>
+  </url>
+  <url> 
+    <loc>https://piggahbrostudios.github.io/project/piggahbrojs/tryit.html</loc>
   </url>
 </urlset>
