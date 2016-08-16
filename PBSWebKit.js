@@ -4,10 +4,12 @@ var PBS = {
     finder: function() {
       if(window.location.hash.slice(1,window.location.hash.length) !== PBS.page.current){
         document.getElementById(PBS.page.current).style.display = "none";
-        PBS.page.current = window.location.hash.slice(1,window.location.hash.length).toString();
+        PBS.page.current = window.location.hash.slice(1,window.location.hash.length);
         if (document.getElementById(PBS.page.current)) {
           document.getElementById(PBS.page.current).style.display = 'block';
+          document.getElementsByTagName("title")[0].innerText = document.getElementById(PBS.page.current).getAttribute("title");
         } else {
+          document.getElementsByTagName("title")[0].innerText = document.getElementById(PBS.settings.page.error['404']).getAttribute("title");
           document.getElementById(PBS.settings.page.error['404']).style.display = 'block';
         }
       }
