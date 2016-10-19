@@ -128,7 +128,7 @@ nav li a, .dropbtn {
 }
 
 nav li a:hover, .dropdown:hover .dropbtn {
-  color: black;
+  color: white;
   background-color: #0af;
 }
 
